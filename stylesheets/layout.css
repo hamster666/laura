@@ -1,0 +1,322 @@
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Typography
+================================================== */
+
+body {
+	font: 14px/21px 'OpenSansRegular', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		color: #181818;
+		font-family: 'BreeSerifRegular', "Georgia", "Times New Roman", serif;
+		font-weight: normal; 
+		text-shadow: #aaa 1px 1px 3px; 
+
+	    -webkit-transition: text-shadow linear .2s;
+	    -moz-transition: text-shadow linear .2s;
+	    -o-transition: text-shadow linear .2s;
+	    -ms-transition: text-shadow linear .2s;
+	    transition: text-shadow linear .2s;
+
+	}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }	
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 17px; line-height: 24px; }
+	h6 { font-size: 14px; line-height: 21px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+h1:hover {
+	text-shadow: #f16ca7 1px 1px 2px;
+}
+
+
+/* #Links
+================================================== */
+	a, a:visited { 
+		color: #333; 
+		text-decoration: underline; 
+		outline: 0; 
+	}
+
+	a:hover, 
+	a:focus { 
+		color: #00A8B8; 
+	}
+	p a, 
+	p a:visited { 
+		line-height: inherit; 
+	}
+
+a:link {
+    -webkit-transition: color linear .2s;
+    -moz-transition: color linear .2s;
+    -o-transition: color linear .2s;
+    -ms-transition: color linear .2s;
+    transition: color linear .2s;
+}
+
+
+/* #Site Styles
+================================================== */
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+#logo {
+	margin-top: 10px;
+
+	-webkit-transition: -webkit-transform linear .4s;
+    -moz-transition: -moz-transform linear .4s;
+    -o-transition: -o-transform linear .4s;
+    -ms-transition: -ms-transform linear .4s;
+    transition: transform linear .4s;
+}
+
+#logo:hover {
+	-webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+
+div.projects img {
+	border: 5px solid #ddd;
+
+	-webkit-box-shadow: #999 1px 1px 2px 2px ;
+    -moz-box-shadow: #999 1px 1px 4px 1px ;     
+    box-shadow: #999 1px 1px 4px 1px ; 
+
+    -webkit-transition: border linear .3s;
+    -moz-transition: border linear .3s;
+    -o-transition: border linear .3s;
+    -ms-transition: border linear .3s;
+    transition: border linear .3s;
+
+     -webkit-transition: -webkit-transform linear .3s;
+    -moz-transition: -moz-transform linear .3s;
+    -o-transition: -o-transform linear .3s;
+    -ms-transition: -ms-transform linear .3s;
+    transition: transform linear .3s;
+}
+
+div.projects img:hover {
+	border: 5px solid #f16ca7;
+
+	-webkit-transform: scale(1.05) rotate(5deg);
+    -moz-transform: scale(1.05) rotate(5deg);
+    -o-transform: scale(1.05) rotate(5deg);
+    -ms-transform: scale(1.05) rotate(5deg);
+    transform: scale(1.05) rotate(5deg);
+}
+/* turquoise #35C0CD*/
+
+.twitter {
+	border-left: 1px solid #dddddd;
+	padding-left: 15px;
+}
+
+ul.tweet_list li {
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 15px
+}
+
+ul.tweet_list li:last-child {
+	border-bottom: none;
+}
+
+ul.social {
+	margin-top: 11px;
+}
+
+ul.contact li img {
+	margin-right: 5px;
+	margin-bottom: -3px;
+}
+
+
+/* #Text selection colour change
+================================================== */
+
+/* IE9+ - Also picked up by most modern browsers */
+::selection {
+	background:#f16ca7;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/* Safari & Chrome - Webkit Rendering */
+::-webkit-selection {
+	background:#f16ca7;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/* Mozilla based - Gecko Rendering */	
+::-moz-selection {
+	background:#f16ca7;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+		ul.media-grid li {
+			width: 172px;
+			height: 172px;
+		}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		img#logo {
+			width: 50%;
+			display: block;
+			margin: 10px auto -20px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		h5#tagline {
+			text-align: center;
+		}
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		h1{
+			font-size: 40px; line-height: 40px; margin-bottom: 14px;
+		}
+
+	}
+
+/* #Font-Face
+================================================== */
+
+@font-face {
+	   font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BreeSerifRegular';
+    src: url('../fonts/BreeSerif-Regular-webfont.eot');
+    src: url('../fonts/BreeSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BreeSerif-Regular-webfont.woff') format('woff'),
+         url('../fonts/BreeSerif-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/BreeSerif-Regular-webfont.svg#BreeSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on October 23, 2012 06:51:45 PM America/New_York */
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+
+
