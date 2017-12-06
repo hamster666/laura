@@ -32,6 +32,7 @@
 		border-spacing: 0; }
 
 
+
 /* #Typography
 ================================================== */
 
@@ -41,6 +42,11 @@ body {
 	color: #444;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
+} 
+
+* {
+	box-sizing: border-box;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -317,6 +323,156 @@ ul.contact li img {
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
+
+
+
+
+/* #BOOK
+================================================== */
+
+.book {
+	border: 1px solid grey;
+	padding: 80px 0 50px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: turquoise;
+	font-size: 40px;
+	line-height: 1.2;
+	letter-spacing: 5px;
+
+}
+.author {
+	color: white;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.gold-o {
+	/*color: gold;*/
+	position: relative;
+	display: inline-block;
+	color: transparent;
+	letter-spacing: 10px
+
+}
+.gold-o:before {
+	content: "";
+	border: 3px solid gold;
+	border-radius: 50%;
+	display: block;
+	height: 30px;
+	width: 30px;
+	top: 8px;
+	left: 0;
+	position: absolute;
+}
+
+.gold-o:after {
+	content: "";
+	border: 1px solid gold;
+
+	display: block;
+	height: 3000px;
+	width: 1px;
+	bottom: 40px;
+	left: 17px;
+	position: absolute;
+	z-index: 0;
+}
+
+.wires {
+	border: 1px solid #999;
+	height: 600px;
+	padding: 10px;
+}
+
+.exercise {
+	background: #ccc;
+	border: 1px solid #999;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-weight: bold;
+}
+.superset .exercise {
+	background: pink;
+	margin-bottom: 0;
+	
+}
+
+.superset .exercise:last-child {
+	margin-bottom: 10px;
+	border-top: none;
+}
+
+.sets {
+	/*border: 1px solid red;*/
+	position: relative;
+	text-align: center;
+}
+
+.sets li {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	border: 1px solid pink;
+	text-align: center;
+	border-radius: 50%;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 1;
+	position: relative;
+	padding-top:17px; 
+	text-align: center;
+
+}
+
+.sets li.active {
+	background: pink;
+}
+
+.float-right {
+	float: right;
+}
+
+
+
+.clock {
+	border: 1px solid grey;
+	width:100%;
+	position: relative;
+	padding: 20px;
+}
+
+
+.set {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	border: 1px solid pink;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 1;
+	position: relative;
+	padding-top:17px; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
